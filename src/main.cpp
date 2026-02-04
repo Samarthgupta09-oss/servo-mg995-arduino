@@ -1,7 +1,9 @@
 #include <Arduino.h>
 #include <Servo.h>
+Servo myServo;
 void setup() {
-// write your initialization code here
+    Serial.begin(9600);
+    myServo.attach(10);
 }
 
 void loop() {
